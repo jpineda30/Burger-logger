@@ -1,0 +1,42 @@
+.cheader{
+
+    background-color: rgb(184, 176, 141);
+    height: 20vh;
+}
+
+.cbg1{
+
+    background-color: rgb(242, 212, 146);
+}
+
+.cbg2{
+
+    background-color: rgb(242, 149, 89);
+}
+
+.ctext1{
+
+   color:rgb(32, 44, 57);
+}
+
+
+.ctext2{
+
+    color:rgb(40, 56, 69);
+}
+
+img{
+    width:  100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cbody{
+    height: 80vh;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(242, 212, 146);
+    padding: 6px;
+}
