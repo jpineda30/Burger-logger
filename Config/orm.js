@@ -14,11 +14,11 @@ var orm = {
     });
   },
 
-  updateOne:function(table,column,value,cond,cb)
+  updateOne:function(table,column,value,condition,cb)
   {
     
 
-    let query = "update " +table+" SET "+column+" = " + value +" where " + cond;
+    let query = "update " +table+" SET "+column+" = " + value +" where " + condition;
     
     connection.query(query,(err,response)=>{
       if (err) {
