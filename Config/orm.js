@@ -30,6 +30,21 @@ var orm = {
     });
   },
 
+  insertOne:function(table,column,value,cb)
+  {
+    
+
+    let query = "insert into " +table+" ("+column+") values ('" + value +"');"; 
+    
+    connection.query(query,(err,response)=>{
+      if (err) {
+        throw err;
+      }
+
+      cb(response);
+
+    });
+  },
   
 }
 
