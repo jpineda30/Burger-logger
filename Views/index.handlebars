@@ -1,0 +1,50 @@
+<div class="columns">
+        <img  class="p-3" src="/burger_122704.png" alt="burger">
+    </div>
+   
+    <div class="columns level level-item">
+
+            <!--Left panel-->
+
+            <div class="column is-one-third">
+               {{#each burgers}}
+                    {{#unless devoured}}
+                         {{> burgers/burger_block }}
+                    {{/unless}}
+               
+                {{/each}}
+            </div>
+
+            <!--Right panel-->
+
+            <div class="column is-one-third">
+
+                <lu id="burger-devoured">
+
+                    {{#each burgers}}
+                    {{#if devoured}}
+                         {{> burgers/burger_devoured }}
+                    {{/if}}
+               
+                {{/each}}
+                    
+
+                </lu>
+
+            </div>
+
+            <!--Input box-->
+        
+        
+
+    </div>
+
+    <div id="input-burger" class="columns level level-item">
+        <div class="control column is-one-third">
+            <textarea id="new-burger" class="textarea" placeholder="burger"></textarea>
+          </div>
+       
+    </div>
+    <div class="columns level level-item">
+               <button id="input-burger-button" class="ctext2 button">Submit</button>
+    </div>
