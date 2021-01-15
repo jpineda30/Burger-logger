@@ -45,6 +45,21 @@ var orm = {
 
     });
   },
+  deleteOne:function(table,condition,cb)
+  {
+    
+
+    let query = "delete from "+ table +" where "+condition+";"; 
+    
+    connection.query(query,(err,response)=>{
+      if (err) {
+        throw err;
+      }
+
+      cb(response);
+
+    });
+  },
   
 }
 
