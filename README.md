@@ -13,7 +13,7 @@
 
 ## Proyect Description
 
-This is an aplication allows the user to input in a list difrent types of burgers and eat the afterwards, all in a nice web application in your browser.
+This is an aplication allows the user to input in a list difrent types of burgers and eat them afterwards, all in a nice web application in a web browser.
 
 !["Preview"](public\img\preview.jpg)
 
